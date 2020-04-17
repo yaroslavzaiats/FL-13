@@ -1,0 +1,142 @@
+body{
+    margin: 0px;
+}
+div.navigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+a{
+    text-decoration: none;
+    margin-right: 20px;
+    font-family: 'Noto Serif', serif;
+    font-size: 15px;
+    color: #777;
+}
+a:hover{
+    color:#bfba55;
+    transition: all 0.3s ease;
+}
+
+.navigation h2{
+    font-family: 'Noto Serif', serif;
+    font-size: 22px;
+    color: #777;
+    font-weight: 600;
+}
+header{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/home-bg.jpg) center top no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.header-heading{
+    font-family: 'Noto Serif', serif;
+    font-size: 52px;
+    color: #FFF;
+    margin-bottom: 0px;
+}
+header p{
+    font-family: 'Noto Serif', serif;
+    color: #bfba55;
+    font-size: 12px;
+}
+header button{
+    background-color: white;
+    border: none;
+    color: #000;
+    font-size: 10px;
+    font-family: 'Noto Serif', serif;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 27px;
+    height: 35px;
+    width: 120px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blog-image{
+    width: 800px;
+    margin-top: 45px;
+}
+.publication-container{
+    width: 800px;
+    font-family: 'Noto Serif', serif;
+    color: #777;
+    font-size: 12px;
+}
+.publication-container h2{
+    color: #000;
+    font-size: 18px;
+}
+.author-image{
+    border: none;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+.comments-container{
+    display: flex;
+    align-items: center;
+}
+.comments-container p{
+    margin-right: 15px;
+}
+.comments{
+    margin-top: 13px;
+}
+.publication-container button{
+    background-color: white;
+    color: #777;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: 'Noto Serif', serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    border: solid 1px;
+    border-color: #777;
+    border-radius: 27px;
+    height: 35px;
+    width: 120px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+hr{
+    color: #777;   
+}
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    color: #777;
+    font-family: 'Noto Serif', serif;
+    font-size: 12px;
+    margin-top: 60px;
+}
+.footer-container{
+    width: 400px;
+    padding-left: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer-heading{
+    color: #FFF;
+    font-size: 18px;
+}

@@ -129,15 +129,25 @@ function formatDate(){
     let day = date.getUTCDate();
     let hours = date.getHours();
     let minutes = date.getMinutes();
-    let fDate;
-    if(hours > 9 && minutes < 10){
-        fDate = `${year}/${month}/${day} ${hours}:0${minutes}`;
-    } else if(hours < 10 && minutes > 9){
-        fDate = `${year}/${month}/${day} 0${hours}:${minutes}`;
-    } else if(hours < 10 && minutes < 10){
-        fDate = `${year}/${month}/${day} 0${hours}:0${minutes}`;
+    let fDate = ``;
+    if(month < 10 && day < 10){
+        fDate += `${year}/0${month}/0${day}`
+    } else if(month < 10 && day > 9){
+        fDate += `${year}/0${month}/${day}`
+    }else if(month > 9 && day < 10){
+        fDate += `${year}/${month}/0${day}`
     } else {
-        fDate = `${year}/${month}/${day} ${hours}:${minutes}`;
+        fDate += `${year}/${month}/${day}`
+    }
+
+    if(hours > 9 && minutes < 10){
+        fDate += ` ${hours}:0${minutes}`;
+    } else if(hours < 10 && minutes > 9){
+        fDate += ` 0${hours}:${minutes}`;
+    } else if(hours < 10 && minutes < 10){
+        fDate += ` 0${hours}:0${minutes}`;
+    } else {
+        fDate += ` ${hours}:${minutes}`;
     }
     return fDate;
 }

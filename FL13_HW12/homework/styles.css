@@ -1,0 +1,50 @@
+.edit-section, .add-section, .preview-section{
+    display: none;
+}
+.preview-section{
+    flex-direction: column;
+    align-items: center;
+}
+.preview{
+    display: flex;
+    align-items: center;
+}
+.edit-section, .add-section{
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+button{
+    margin: 10px;
+    width: 110px;
+}
+img{
+    width: 100px;
+    margin: 10px;
+}
+span{
+    margin: 10px;
+}
+.list-name{
+    cursor: pointer;
+}
+#root {
+    display: flex;
+}
+li{
+    display: flex;
+    list-style: none;
+}
+.add-new-item{
+    margin-left: 48px;
+}
+.pages{
+    margin-top: 65px;
+    margin-left: 200px;
+}
+.preview-plot{
+    width: 500px;
+}

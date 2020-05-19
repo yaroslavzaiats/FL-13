@@ -1,0 +1,85 @@
+ul, li, a{
+    margin: 0px;
+    padding: 0px;
+}
+.navigation{
+    justify-content: space-evenly;
+}
+.navigation__logo{
+    margin-left: 55px;
+}
+.navigation__button{
+    margin-right: 35px;
+}
+body{
+    overflow-x: hidden;
+}
+.navigation__list{
+    list-style: none;
+}
+.header__heading{
+    padding: 0%;
+}
+.header__button{
+    background-color: #ff7f50;
+    height: 42px;
+}
+.footer__description{
+    font-size: 0.8vw;
+}
+.footer__button{
+    background-color: #ff7f50;
+    height: 37px;
+}
+.footer__copyring{
+    font-size: 1vw;
+}
+.navigation__burger{
+    display: none;
+}
+.game_section1__cards{
+    max-width: 1000px;
+}
+.footer__items{
+    padding: 0%;
+}
+@media (max-width: 768px){
+    .navigation__list, .navigation__button{
+        display: none;
+    }
+    .navigation__burger{
+        display: block;
+    }
+    .header{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 40px;
+    }
+    .header__text{
+        font-size: 3vw;
+    }
+    .footer__description, .footer__copyring{
+        font-size: 2vw;
+    }
+    .footer__items{
+        flex-direction: column;
+    }
+    .footer__text_section, .footer__form{
+        padding: 0%;
+    }
+}
+@media (max-width: 576px){
+    .footer__description, .footer__copyring{
+        font-size: 4vw;
+    }
+    .footer__button, .footer__email{
+        font-size: 4vw;
+        height: 60px;
+    }
+    .card-text{
+        font-size: 4vw;
+    }
+    .card__title{
+        font-size: 5vw;
+    }
+}

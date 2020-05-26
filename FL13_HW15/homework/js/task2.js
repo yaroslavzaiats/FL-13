@@ -1,3 +1,7 @@
+const OVERHEAT = 30;
+const DRIVE_INTERVAL = 2000;
+const STOP_INTERVAL = 1500;
+
 function Vehicle (color, engine){
     let maxSpeedDuringDrive = 0;
     let isDrive = true;
@@ -44,12 +48,12 @@ function Vehicle (color, engine){
                 if(currentSpeed > this.defaultMaxSpeed){
                     console.log('speed is too high, SLOW DOWN!');
                 }
-                if(currentSpeed >= this.defaultMaxSpeed+30 && this.name === 'motorcycle'){
+                if(currentSpeed >= this.defaultMaxSpeed+OVERHEAT && this.name === 'motorcycle'){
                     console.log('Engine overheating');                    
                     this.stop();
                 }
                 console.log(currentSpeed);
-            }, 2000);
+            }, DRIVE_INTERVAL);
         } else {
             console.log('Already driving');            
         }
@@ -76,7 +80,7 @@ function Vehicle (color, engine){
                 } else {
                     console.log(currentSpeed);
                 }
-            }, 1500);
+            }, STOP_INTERVAL);
         } else {
             console.log('Already slows down');            
         }

@@ -1,0 +1,13 @@
+.user-item {
+    list-style: none;
+    margin: 10px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+}
+.user-id {
+    width: 100px;
+}
+.users-list {
+    padding: 0px;   
+}
